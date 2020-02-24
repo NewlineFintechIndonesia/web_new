@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Donis', sans-serif;
+    color: #222;
+}
+
+.dropdown-menu,
+.navbarDropdown {
+    background: #23c268 !important;
+    border: none;
+}
+
+.navbar-light {
+    background: #23c268 !important;
+}
+
+.navbar {
+    padding: .1rem;
+    position: fixed;
+}
+
+.nav-link .active {
+    color: #23c268 !important;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+hr.light {
+    border-top: 1px solid #23c268;
+    width: 75%;
+
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-youtube {
+    font-size: 2.9m;
+    color: #23c268;
+}
+
+.fa-whatsapp {
+    font-size: 1.2em;
+    color: #23c268;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.container p {
+    color: black;
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container h1 {
+    color: black;
+}
+
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i {
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox,
+.btn {
+    border: none;
+    outline: none;
+}
+
+.email-box:hover > .tbox,
+.tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+}
+
+.tbox {
+    width: 0px;
+    transition: 0.3s;
+    background-color: whitesmoke;
+}
+
+.btn {
+    background: #23c268;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

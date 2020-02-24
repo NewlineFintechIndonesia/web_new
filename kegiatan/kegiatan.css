@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Donis', sans-serif;
+    color: #222;
+}
+
+.dropdown-menu,
+.navbarDropdown {
+    background: #23c268 !important;
+    border: none;
+}
+
+.navbar {
+    padding: .1rem;
+    position: fixed;
+}
+
+.navbar-light {
+    background: #23c268 !important;
+}
+
+.nav-link active {
+    color: green !important;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+hr.light {
+    border-top: 1px solid #23c268;
+    width: 75%;
+
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-youtube {
+    font-size: 2.9em;
+    margin: 0.5rem;
+    color: #23c268;
+}
+
+
+.fa-whatsapp {
+    font-size: 1.2em;
+    color: #23c268;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.container p {
+    color: black;
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container h1 {
+    color: black;
+}
+
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i {
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox,
+.btn {
+    border: none;
+    outline: none;
+}
+
+.email-box:hover > .tbox,
+.tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+}
+
+.tbox {
+    width: 0px;
+    transition: 0.3s;
+    background-color: whitesmoke;
+}
+
+.btn {
+    background: #23c268;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.border {
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+}
+
+.gallery-section .gallery {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.gallery-section .image {
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.gallery-section .image:hover img {
+    transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+    .gallery-section .image {
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-section .image {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section .image {
+        flex: 100%;
+    }
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
