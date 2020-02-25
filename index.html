@@ -12,13 +12,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <script type="application/x-javascript">
+            $(function() {
+                $.ajax({
+                    url:"http://api.prosperitree.co.id/overdue/rate",
+                    type:"GET",
+                    data:{},
+                    dataType:"jsonp",
+                    success:function(data){
+                        $('#overdue_rate').html(data.overdue_rate+'%');
+                        $('#matching_rate').html(data.matching_rate+'%');
+                    }
+                });
+            });
+            
+        </script>
 </head>
 
 <body>
 
     <!--- Start Floating --->
 
-    <a class="act-btnn">TKB%</a>
+    <p class="act-btnn">TKB90 = <span id="matching_rate"/></p>
 
     <!--- End Floating --->
 
